@@ -1,4 +1,4 @@
-# [Sanae MVC Base](https://github.com/Narazaka/sana-mvcbase)
+# [Sana MVC Base](https://github.com/Narazaka/sana-mvcbase)
 
 [![Gem](https://img.shields.io/gem/v/sana-mvcbase.svg)](https://rubygems.org/gems/sana-mvcbase)
 [![Gem](https://img.shields.io/gem/dtv/sana-mvcbase.svg)](https://rubygems.org/gems/sana-mvcbase)
