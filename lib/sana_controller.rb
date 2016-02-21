@@ -1,3 +1,5 @@
+require 'sana'
+
 # Sana Controller
 class SanaController
   # constructor
@@ -46,6 +48,32 @@ class SanaController
   # @return [String, Openstruct] response
   def render(*args)
     @response = render_response(*args)
+  end
+
+  # render raw normal response (200 OK or 204 No Content)
+  # @param [String] value Value header content
+  # @param [String] to Reference0 header content (for communication)
+  # @return [OpenStruct] response
+  def render_ok(value = nil, to = nil)
+    @response = Sana::ResponseHelper.ok(value, to)
+  end
+
+  # render 204 No Content
+  # @return [OpenStruct] response
+  def render_no_content
+    @response = Sana::ResponseHelper.no_content
+  end
+
+  # render 400 Bad Request
+  # @return [OpenStruct] response
+  def render_bad_request
+    @response = Sana::ResponseHelper.bad_request
+  end
+
+  # render 500 Internal Server Error
+  # @return [OpenStruct] response
+  def render_internal_server_error
+    @response = Sana::ResponseHelper.internal_server_error
   end
 
   # make result by given options
