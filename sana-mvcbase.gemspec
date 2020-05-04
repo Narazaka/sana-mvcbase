@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", ">= 1.7.9"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.4"
-  spec.add_development_dependency "yard", "~> 0.8.7"
+  spec.add_development_dependency "yard", "~> 0.9.25"
   spec.add_development_dependency "simplecov", "~> 0.11"
   spec.add_development_dependency "codecov", "~> 0.1"
   spec.add_dependency "shioruby", ">= 0.0.3"
